@@ -1,0 +1,38 @@
+Para criar um novo arquivo JavaScript dentro da pasta `src` e elaborar uma função que retorne uma mensagem ao chamar http://localhost:3000/ em um projeto React, siga os passos abaixo:
+
+1. Dentro da pasta `src`, crie um novo arquivo JavaScript. Por exemplo, você pode nomeá-lo como `mensagem.js`.
+
+2. Abra o arquivo `mensagem.js` e insira o seguinte código de exemplo:
+
+```javascript
+// mensagem.js
+
+export default function getMensagem() {
+  return 'Bem-vindo à minha página!';
+}
+```
+
+Neste exemplo, criamos uma função chamada `getMensagem` que retorna a mensagem "Bem-vindo à minha página!".
+
+3. Agora, no arquivo `App.js`, que está localizado na pasta `src`, você pode importar a função `getMensagem` e usá-la para exibir a mensagem. Modifique o arquivo `App.js` da seguinte maneira:
+
+```javascript
+import React from 'react';
+import getMensagem from './mensagem'; // Importe a função
+
+function App() {
+  return (
+    <div>
+      <h1>{getMensagem()}</h1>
+    </div>
+  );
+}
+
+export default App;
+```
+
+4. Após fazer essas modificações, salve os arquivos `mensagem.js` e `App.js`.
+
+Agora, quando você abrir http://localhost:3000/ no navegador, verá a mensagem "Bem-vindo à minha página!" exibida na página inicial.
+
+Certifique-se de que o servidor de desenvolvimento esteja em execução com o comando `npm start` para visualizar a mensagem no navegador.

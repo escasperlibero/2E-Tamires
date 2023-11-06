@@ -1,0 +1,79 @@
+Para criar um aplicativo React com roteamento entre telas, você pode usar a biblioteca `react-router-dom`. Certifique-se de que você já adicionou essa biblioteca ao seu projeto executando o seguinte comando:
+
+```bash
+npm install react-router-dom
+```
+
+Aqui está um exemplo de como você pode configurar o roteamento em um projeto React:
+
+1. Crie um novo componente para cada tela que você deseja rotear. Por exemplo, crie os componentes `TelaPrincipal` e `TelaSecundaria`:
+
+```javascript
+// TelaPrincipal.js
+import React from 'react';
+
+function TelaPrincipal() {
+  return <h1>Tela Principal</h1>;
+}
+
+export default TelaPrincipal;
+```
+
+```javascript
+// TelaSecundaria.js
+import React from 'react';
+
+function TelaSecundaria() {
+  return <h1>Tela Secundária</h1>;
+}
+
+export default TelaSecundaria;
+```
+
+2. No componente raiz do seu aplicativo (geralmente `App.js`), configure o roteamento. Importe `BrowserRouter`, `Route`, e `Switch` da biblioteca `react-router-dom` e defina as rotas para seus componentes:
+
+```javascript
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import TelaPrincipal from './TelaPrincipal';
+import TelaSecundaria from './TelaSecundaria';
+
+function App() {
+  return (
+    <Router>
+      <div>
+        <Switch>
+          <Route path="/" exact component={TelaPrincipal} />
+          <Route path="/secundaria" component={TelaSecundaria} />
+        </Switch>
+      </div>
+    </Router>
+  );
+}
+
+export default App;
+```
+
+Neste exemplo, estamos configurando duas rotas. A rota raiz (`/`) apontará para `TelaPrincipal`, e a rota `/secundaria` apontará para `TelaSecundaria`.
+
+3. Agora, você pode criar links para navegar entre as telas em seus componentes. Por exemplo, você pode adicionar links no `TelaPrincipal` para ir para a `TelaSecundaria`:
+
+```javascript
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+function TelaPrincipal() {
+  return (
+    <div>
+      <h1>Tela Principal</h1>
+      <Link to="/secundaria">Ir para Tela Secundária</Link>
+    </div>
+  );
+}
+
+export default TelaPrincipal;
+```
+
+Dessa forma, quando você clicar no link, o roteamento levará você para a `TelaSecundaria`.
+
+Certifique-se de importar os componentes corretamente e ajustar as rotas de acordo com as suas necessidades. Com essa configuração básica, você pode adicionar mais telas e funcionalidades ao seu aplicativo com roteamento.

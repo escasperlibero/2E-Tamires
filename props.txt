@@ -1,0 +1,42 @@
+Para utilizar `props` em um componente React, você deve passar dados de um componente pai para um componente filho como propriedades. Aqui está um exemplo simples de como você pode fazer isso no projeto React:
+
+Suponha que você tenha um componente pai chamado `App` e um componente filho chamado `FilhoComponent`. No componente pai (`App`), você pode passar `props` para o componente filho (`FilhoComponent`) da seguinte forma:
+
+1. No arquivo `App.js` (ou qualquer outro nome que você tenha usado para o componente pai), você pode criar uma instância do componente filho e passar as `props` desejadas:
+
+```javascript
+import React from 'react';
+import FilhoComponent from './FilhoComponent'; // Importe o componente filho
+
+function App() {
+  return (
+    <div>
+      <h1>Meu Aplicativo React</h1>
+      <FilhoComponent prop1="Valor da Propriedade 1" prop2="Valor da Propriedade 2" />
+    </div>
+  );
+}
+
+export default App;
+```
+
+2. No componente filho (`FilhoComponent`), você pode acessar essas `props` e usá-las da seguinte forma:
+
+```javascript
+import React from 'react';
+
+function FilhoComponent(props) {
+  return (
+    <div>
+      <p>Propriedade 1: {props.prop1}</p>
+      <p>Propriedade 2: {props.prop2}</p>
+    </div>
+  );
+}
+
+export default FilhoComponent;
+```
+
+Neste exemplo, o componente pai (`App`) passa duas `props` (prop1 e prop2) para o componente filho (`FilhoComponent`). O componente filho acessa essas `props` usando o parâmetro `props` da função e renderiza os valores das `props` em seu conteúdo.
+
+Isso é um exemplo simples de como usar `props` em um componente React. Você pode personalizar e passar qualquer dado que desejar de um componente pai para um componente filho usando `props`. Certifique-se de importar e usar os componentes apropriadamente em seu projeto.

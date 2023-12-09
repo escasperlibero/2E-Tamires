@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lugares Turísticos na Europa</title>
+  <style>
+    /* Adicione estilos CSS para dar uma aparência atraente à página, se desejar */
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    /* Adicione mais estilos conforme necessário */
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Lugares Turísticos na Europa</h1>
+    <p>Descubra os destinos mais encantadores do continente europeu.</p>
+  </header>
+
+  <section>
+    <article>
+      <img src="paris.jpg" alt="Torre Eiffel em Paris">
+      <h2>Paris, França</h2>
+      <p>A cidade do amor, lar da icônica Torre Eiffel, do Museu do Louvre e de charmosas ruas de paralelepípedos.</p>
+    </article>
+
+    <article>
+      <img src="santorini.jpg" alt="Vista de Santorini, Grécia">
+      <h2>Santorini, Grécia</h2>
+      <p>Uma ilha paradisíaca conhecida por suas casas brancas, vistas deslumbrantes do Mar Egeu e pores do sol inesquecíveis.</p>
+    </article>
+
+    <article>
+      <img src="coliseu.jpg" alt="Coliseu em Roma">
+      <h2>Roma, Itália</h2>
+      <p>A capital eterna, onde a história se mistura com a modernidade. Explore o Coliseu, o Vaticano e a Fontana di Trevi.</p>
+    </article>
+  </section>
+
+  <section>
+    <article>
+      <img src="barcelona.jpg" alt="Sagrada Família em Barcelona">
+      <h2>Barcelona, Espanha</h2>
+      <p>Uma cidade vibrante com arquitetura única de Gaudí, praias ensolaradas, e uma vida noturna animada.</p>
+    </article>
+
+    <article>
+      <img src="alpes.jpg" alt="Alpes Suíços">
+      <h2>Alpes Suíços</h2>
+      <p>Para os amantes da natureza, os Alpes oferecem paisagens de tirar o fôlego, trilhas incríveis e estações de esqui renomadas.</p>
+    </article>
+
+    <article>
+      <img src="amsterda.jpg" alt="Canais em Amsterdã">
+      <h2>Amsterdã, Holanda</h2>
+      <p>Conhecida por seus canais pitorescos, museus excepcionais, e atmosfera descontraída.</p>
+    </article>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Lugares Turísticos na Europa</p>
+  </footer>
+
+</body>
+</html>
